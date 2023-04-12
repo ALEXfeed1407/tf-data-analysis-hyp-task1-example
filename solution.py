@@ -13,7 +13,7 @@ def solution(x_success: int,
     a2 = y_success /y_cnt
     diff = np.sqrt((a1 * (1 - a1) / x_cnt) + (a2 * (1-a2) / y_cnt))
     z_ = (a2 - a1) / diff
-    z_crit = norm.ppf(1-0.02/2)
+    z_crit = norm.ppf(1-0.02)
     print(z_,z_crit)
     decision = z_ > z_crit
   
